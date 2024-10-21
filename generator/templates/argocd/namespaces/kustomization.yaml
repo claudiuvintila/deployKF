@@ -30,7 +30,7 @@ resources:
   - deploykf-core/deploykf-dashboard.yaml
   {{<- end >}}
 
-  {{<- if .Values.deploykf_core.deploykf_istio_gateway.enabled >}}
+  {{<- if .Values.deploykf_core.deploykf_istio_gateway.charts.istioGateway.enabled >}}
   - deploykf-core/deploykf-istio-gateway.yaml
   {{<- end >}}
 
